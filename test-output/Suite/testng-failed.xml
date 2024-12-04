@@ -3,19 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.loginModule.CheckOutReviewPageTestClass">
+      <class name="org.loginModule.FilterPageTestClass">
         <methods>
-          <include name="verifyItemTotalPriceUpdateWhenUserRemoveProductFromeCard"/>
-          <include name="verifyAfterClickingCancelBtnOnCheckOutPageUserRedirectToHomePage"/>
-          <include name="validatePageTitle"/>
-          <include name="verifyFinishButtonSpecifications"/>
-          <include name="verifyFinalTotalPriceIsCorrectAfterAddingTaxValue"/>
-          <include name="setup"/>
-          <include name="verifyItemTotalPriceUpdateWhenUserAddMutipleProductFromeCard"/>
-          <include name="verifyAfterClickingFinishBtnUserRedirectToFinishPage"/>
+          <include name="VerifyFilterDropDownOption"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- org.loginModule.CheckOutReviewPageTestClass -->
+      </class> <!-- org.loginModule.FilterPageTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
