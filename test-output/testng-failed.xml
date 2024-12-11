@@ -3,13 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.loginModule.FilterPageTestClass">
+      <class name="org.loginModule.FinishPageTestClass">
         <methods>
-          <include name="VerifyFilterDropDownOption"/>
+          <include name="tearUp"/>
+          <include name="verifyPageTitle"/>
+          <include name="verifypony_expressImgTest"/>
+          <include name="VerifyOrderConfirmationMsg"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="verifylogoFinishPage"/>
+          <include name="VerifytheElementIsVisibleAfterScrollingpageTest"/>
         </methods>
-      </class> <!-- org.loginModule.FilterPageTestClass -->
+      </class> <!-- org.loginModule.FinishPageTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

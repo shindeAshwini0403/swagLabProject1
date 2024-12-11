@@ -24,7 +24,7 @@ public class Homepage extends BaseClass
 	@FindBy(xpath="//div[@id=\"shopping_cart_container\"]") private WebElement shoppingCarticon;
 	@FindBy(xpath="//select[@class=\"product_sort_container\"]") private WebElement filterOptn;
 	@FindBy(xpath="//button[@class=\"btn_primary btn_inventory\"]")private List<WebElement> addToCartButtons;
-
+    @FindBy(xpath="//select[@class=\"product_sort_container\"]")private WebElement fiterOption;
 	// Constructor to initialize elements
 	
 	public Homepage()
@@ -103,10 +103,8 @@ public class Homepage extends BaseClass
 		actualOption.add(option.getText());
 		
 		}
-		
-		
 	  return actualOption ;
-	   
+
 	}
 	public String getTitleHomePage()
 	{
@@ -127,6 +125,10 @@ public class Homepage extends BaseClass
 	   
 		String URL = driver.getCurrentUrl();
 		return URL;
+	}
+	public void clickOnFiltertOption()
+	{
+		fiterOption.click();
 	}
 	
 	
